@@ -1,0 +1,25 @@
+[project]
+name = "lewis-signalling-game"
+version = "0.1.0"
+description = "Two neural agents that invent a language from scratch to solve a cooperative referential game"
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.2",
+    "numpy>=1.26",
+    "streamlit>=1.35",
+    "plotly>=5.20",
+    "scipy>=1.13",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "pytest-cov"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.scripts]
+lewis-train = "lewis.train:main"

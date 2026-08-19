@@ -1,0 +1,14 @@
+{
+  "n_attributes": 3,
+  "n_values": 4,
+  "n_distractors": 3,
+  "hidden_dim": 128,
+  "vocab_size": 10,
+  "msg_len": 3,
+  "lr": 0.001,
+  "batch_size": 256,
+  "epochs": 200,
+  "tau_start": 5.0,
+  "tau_min": 0.1,
+  "tau_decay": 0.998
+}
